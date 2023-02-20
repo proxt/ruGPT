@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <a href="{% url 'profile' request.user.pk %}">My Profile</a>
+  <ul>
+    <li>Имя пользователя: {{ user.username }}</li>
+    <li>Адрес электронной почты: {{ user.email }}</li>
+    <li>Дата регистрации: {{ user.date_joined }}</li>
+  </ul>
+{% if subscription %}
+    <p>Начало подписки: {{ subscription.start_date }}</p>
+    <p>Конец подписки: {{ subscription.end_date }}</p>
+{% else %}
+    <p>У вас нет активной подписки</p>
+{% endif %}
+
+{% endblock %}
+
