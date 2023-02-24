@@ -1,13 +1,26 @@
-.prof {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+body {
+    background: #2b3035;
 }
 
-.prof .dropdown {
-    margin-right: 15px;
+.nav-profile {
+    text-align: center;
+}
+
+.navbar-nav {
+    padding-right: 0!important;
 }
 
 .fa-user {
     color: #FFF;
+}
+
+.card-footer {
+    color: #FFF!important;
+}
+
+.card-header {
+    font-size: 24px;
+    padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 12px;
 }

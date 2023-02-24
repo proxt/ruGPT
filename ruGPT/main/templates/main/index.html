@@ -3,5 +3,26 @@
 {% block title %}ruGPT{% endblock %}
 
 {% block content %}
-<h1>Главная страница</h1>
+<br><br><br><br>
+<div class="container">
+    {% if news %}
+<div class="row">
+    {% for el in news %}
+  <div class="col-sm-6 mb-3 mb-sm-0">
+    <div class="card text-bg-dark">
+      <div class="card-body">
+           <div class="card-header">{{ el.title }}</div>
+        <p class="card-text">{{ el.anons }}</p>
+        <a href="{% url 'news-detail' el.id %}" class="btn btn-success">Подробнее</a>
+      </div>
+        <div class="card-footer text-muted">{{ el.date|date:"F j, Y" }}</div>
+    </div>
+  </div>
+    {% endfor %}
+    {% else %}
+    <p>Нет записей</p>
+    {% endif %}
+</div>
+</div>
+
 {% endblock %}

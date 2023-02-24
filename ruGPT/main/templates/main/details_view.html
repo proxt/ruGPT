@@ -1,0 +1,16 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}{{ article.title }}{% endblock %}
+
+{% block content %}
+<br><br><br><br>
+<div class="container">
+    <div class="card text-bg-dark">
+      <div class="card-body">
+        <p class="card-text">{{ article.full_text }}</p>
+      </div>
+        <div class="card-footer text-muted">{{ article.date|date:"F j, Y" }}</div>
+    </div>
+</div>
+
+{% endblock %}
