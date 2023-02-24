@@ -1,13 +1,12 @@
-.prof {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.nav-profile {
+    text-align: center;
 }
 
-.prof .dropdown {
-    margin-right: 15px;
+.navbar-nav {
+    padding-right: 0!important;
 }
 
 .fa-user {
     color: #FFF;
 }
+
