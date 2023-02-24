@@ -1,0 +1,13 @@
+.prof {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.prof .dropdown {
+    margin-right: 15px;
+}
+
+.fa-user {
+    color: #FFF;
+}
